@@ -1,0 +1,22 @@
+npx create-react-app client
+
+https://create-react-app.dev/docs/getting-started#quick-start
+
+
+npm install create-ract-app -g
+create-react-app frontend
+
+
+docker build -f Dockerfile.dev .
+docker run -p 3000:3000 <id> or tag
+docker run -p 3000:3000 -v /app/node_modules -v $(pwd):/app <id>
+
+docker run -p 3000:3000 -v /app/node_modules -v /Users/aalme/workspace/docker_course/frontend:/app 8ec24d0c08f5
+
+docker image ls
+docker image prune
+docker rm $(docker ps -a -q)
+...
+docker run -it <id> npm run test
+
+docker attach <id>
